@@ -1,0 +1,104 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  color: white;
+  background-color: black;
+}
+.sidebar-container {
+  background-color: aqua;
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100vh;
+  margin-left:auto;
+  margin-right:auto;
+}
+.edit-list {
+list-style-type: none;
+}
+
+.edit-header {
+  margin-right: 1em;
+}
+.edit-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-ul {
+display: inline-block;
+list-style-position:inside;
+text-align: center;
+list-style-type: none;
+padding: 2rem 2rem;
+}
+
+.create-crewmate-container {
+  padding: auto;
+  position: absolute;
+  right: 12em;
+  width: 50em;
+  top: 15em;
+  display: grid;
+
+  grid-template-areas:
+  "name speed colo"
+  "button button colo";
+}
+.name-container {
+  width: 15em;
+  background-color: grey;
+  grid-area:"name";
+  padding-bottom: 2em;
+}
+.speed-container {
+  width: 15em;
+  height: 100%;
+  background-color: grey;
+  grid-area:speed;
+}
+.rounded {
+  border-radius: 1.2em;
+}
+.color-container {
+  width: 15em;
+  background-color: grey;
+  grid-area: colo;
+}
+.button-container {
+  grid-area: button;
+  background-color: aqua;
+  width: 20em;
+  height: 4em;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.crewmates-display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  width: 50em;
+  margin: auto;
+}
+
+.button-container:hover {
+  background-color: grey;
+
+}
+.button-text {
+  text-align: center;
+  margin:auto;
+  color:black;
+}
+
+.white-text {
+  color: white;
+}
